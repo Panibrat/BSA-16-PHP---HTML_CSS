@@ -1,6 +1,7 @@
 body{
+    color: #000000;
     background-color: rgb(207, 226, 243);
-    border: 1px solid #9C27B0;
+    border: 2px solid #9C27B0;
 }
 body ~ div{
     border: 1px solid grey;
@@ -9,6 +10,7 @@ body ~ div{
     height: 150px;
     width: 100%;
     border: 2px solid black;
+    overflow: hidden;
 }
 .head_image{
     display: inline-block;
@@ -29,45 +31,112 @@ body ~ div{
     vertical-align: middle;
 }
 .main_content{
-
+    height: 600px;
+    position: relative;
+    overflow: hidden;
 }
 .menu{
-
-    width: 250px;
-
-    margin-left: 1px;
-
+    display: inline-block;
+    float: left;
     position: relative;
-
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 100%;
+    margin-left: 0px;
+    /* position: relative; */
     /* left: -49px; */
+    border: 2px solid black;
+    overflow: hidden;
 }
 .menu ul{
-
     margin: 0px;
-
     padding: 0px;
-
     background-color: rgb(182, 215, 168);
+    z-index: 10;
 }
 .menu ul li{
-
+    margin: -2px;
     list-style-type: none;
-
     border: 2px solid green;
-
     height: 25px;
-
     font-size: 20px;
-
     padding: 10px;
+    text-align: left;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
 }
 .main_part{
-
+    /* display: inline-block; */
+    /* float: right; */
+    width: 100%;
+    height: 600px;
+    border: 1px solid red;
+    margin-left: 250px;
 }
 .main_box1{
-
+    height: 400px;
+    width: 100%;
+    border: 2px solid grey;
 }
 .main_box2{
-
+    width: 100%;
+    height: 200px;
+    border: 2px solid grey;
 }
-
+.block_type1{
+    width: 220px;
+    height: 140px;
+    background-color: #ead1dc;
+    border: 1px solid black;
+    /* float: left; */
+    margin: 10px;
+}.block_type2{
+     width: 30%;
+     display: inline-block;
+     height: 170px;
+     background-color: #ead1dc;
+     border: 1px solid black;
+     /* float: left; */
+     margin: 10px;
+ }
+.box1-flex1{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.box1-flex2{
+     display: flex;
+     justify-content: center;
+ }
+.bottom{
+    width: 100%;
+    height: 70px;
+    border: 2px solid black;
+    background-color: #fff0c2;
+}.footer{
+    width: 100%;
+    height: 70px;
+    border: 2px solid black;
+}
+.block_type3{
+    width: 33%;
+    display: inline-block;
+    height: 100%;
+    /* background-color: #ead1dc; */
+    border: 1px solid black;
+    float: left;
+    /* margin: 10px; */
+    text-align: center;
+    line-height: 64px;
+    font-size: 22px;
+}.block_type4{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 64px;
+    font-size: 22px;
+}
